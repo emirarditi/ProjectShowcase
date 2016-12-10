@@ -17,6 +17,7 @@
                 </div>
                 <div class="col-md-4">
                     <select class="form-control" id="sel1">
+                        <option value="" hidden>Catagory</option>
                         <?php include "DataObjects/Categories.php"?>
                     </select>
                 </div>
@@ -33,7 +34,7 @@
             <br>
             <div class="col-md-6">
                 <button class="btn btn-info btn-md" type="button">
-                    <i class="glyphicon"> login</i>
+                    <i class="glyphicon"> Admin</i>
                 </button>
             </div>
         </div>
