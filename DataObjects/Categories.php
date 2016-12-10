@@ -7,5 +7,5 @@
     ]);
 
  foreach ($options as $option){
-     echo '<option class="" value="' . $option["category_id"] . '">' . $option["category_name"] . '</option>';
+     echo '<option value="' . $option["category_id"] . '">' . $option["category_name"] . '</option>';
  }

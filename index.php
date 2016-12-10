@@ -11,19 +11,20 @@
     <div class="row">
         <div class="col-md-8">
             <br>
-            <form>
+            <form method="get" action="Search.php">
                 <div class="col-md-6">
-                    <input type="text" class="form-control input-xs" placeholder="Search.." />
+                    <input type="text" name="keyword" class="form-control input-xs" placeholder="Search.." />
                 </div>
                 <div class="col-md-4">
-                    <select class="form-control" id="sel1">
+                    <select name="category" class="form-control" id="sel1">
+                        <option value="0">All Categories</option>
                         <?php include "DataObjects/Categories.php"?>
                     </select>
                 </div>
                 <div class="col-md-2">
-                    <button class="btn btn-info btn-md" type="button">
+                    <input class="btn btn-info btn-md" type="submit">
                         <i class="glyphicon glyphicon-search"> Search</i>
-                    </button>
+                    </input>
                 </div>
             </form>
         </div>
