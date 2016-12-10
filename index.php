@@ -22,9 +22,9 @@
                     </select>
                 </div>
                 <div class="col-md-2">
-                    <input class="btn btn-info btn-md" type="submit">
+                    <button value="search" class="btn btn-info btn-md" type="submit">
                         <i class="glyphicon glyphicon-search"> Search</i>
-                    </input>
+                    </button>
                 </div>
             </form>
         </div>
@@ -42,8 +42,9 @@
 
     <h1><strong>WELCOME</strong></h1>
     <h4>Trending products:</h4>
-    <div>
 
+    <div>
+        <?php include "DataObjects/RandomProducts.php"?>
     </div>
 </div>
 </body>
