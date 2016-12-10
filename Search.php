@@ -9,14 +9,18 @@ for($i = 0; $i < count($keywordArray); $i++){
         $keywordString.="|";
 }
 $products = [];
-if($categoryId === 0) {
+var_dump($keywordArray);
+if($categoryId == 0) {
+    echo "Hello";
     $products = $database->select("Products", "*", [
             "product_description[REGEXP]" => $keywordString
     ]);
 }
 else {
+    var_dump($keywordString);
+    echo "hi";
     $products = $database->select("Products", "*", [
-        "OR" =>[
+        "AND" =>[
         "product_description[REGEXP]" => $keywordString,
         "product_category_id" => $categoryId
         ]
