@@ -17,12 +17,7 @@
                 </div>
                 <div class="col-md-4">
                     <select class="form-control" id="sel1">
-                        <option value="" hidden>Catagory</option>
-                        <option>All</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
+                        <?php include "DataObjects/Categories.php"?>
                     </select>
                 </div>
                 <div class="col-md-2">
