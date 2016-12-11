@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link type="text/javascript" src="script/jquery-3.1.1.min.js">
-    <link type='text/css' rel='stylesheet' href='css/bootstrap.min.css'/>
-    <script type='text/javascript' src="script/bootstrap.min.js"></script>
+<?php include "Head.php";?>
 </head>
 
 <body>
@@ -33,9 +31,11 @@
         <div class="col-md-2">
             <br>
             <div class="col-md-6">
+                <a href="LoginPage.php">
                 <button class="btn btn-info btn-md" type="button">
                     <i class="glyphicon"> Admin</i>
                 </button>
+                </a>
             </div>
         </div>
     </div>
