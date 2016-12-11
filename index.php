@@ -6,39 +6,31 @@
 
 <body>
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-8">
-            <br>
-            <form method="get" action="Search.php">
-                <div class="col-md-6">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.php" style="color:white">ShowCase</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.php" style="color:white">Home</a></li>
+                <li><a href="LoginPage.php" style="color:white">Admin</a></li>
+            </ul>
+            <form method="get" class="navbar-form navbar-left" action="Search.php">
+                <div class="input-group">
                     <input type="text" name="keyword" class="form-control input-xs" placeholder="Search.." />
-                </div>
-                <div class="col-md-4">
-                    <select name="category" class="form-control" id="sel1">
-                        <option value="0">All Categories</option>
-                        <?php include "DataObjects/Categories.php"?>
-                    </select>
-                </div>
-                <div class="col-md-2">
-                    <button value="search" class="btn btn-info btn-md" type="submit">
-                        <i class="glyphicon glyphicon-search"> Search</i>
-                    </button>
+                    <div class="input-group-btn">
+                        <select name="category" class="form-control">
+                            <option value="0">All Categories</option>
+                            <?php include "DataObjects/Categories.php" ?>
+                        </select>
+                        <button value="search" class="btn btn-info btn-md" type="submit">
+                            <i class="glyphicon glyphicon-search"> Search</i>
+                        </button>
+                    </div>
                 </div>
             </form>
         </div>
-        <div class="col-md-2">
-        </div>
-        <div class="col-md-2">
-            <br>
-            <div class="col-md-6">
-                <a href="LoginPage.php">
-                <button class="btn btn-info btn-md" type="button">
-                    <i class="glyphicon"> Admin</i>
-                </button>
-                </a>
-            </div>
-        </div>
-    </div>
+    </nav>
 
     <h1><strong>WELCOME</strong></h1>
     <h4>Trending products:</h4>

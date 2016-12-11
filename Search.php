@@ -22,3 +22,21 @@ else {
         ]
     ]);
 }
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <?php include "Head.php";?>
+    </head>
+    <body>
+        <div class="container">
+            <?php
+                foreach ($products as $product){
+                    echo '<h3><a href="#">' . $product["product_name"] . '</a></h3>';
+                    echo '<p>' . $product["product_description"] . '</p>';
+                    echo '<br><br>';
+                }
+            ?>
+        </div>
+    </body>
+</html>
