@@ -1,5 +1,5 @@
 <?php
-include "DataObjects/DatabaseInstance.php";
+include_once "DataObjects/DatabaseInstance.php";
 $user = $_POST["username"];
 var_dump($user);
 $password = md5($_POST["password"]);

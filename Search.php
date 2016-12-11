@@ -1,5 +1,5 @@
 <?php
-include "DataObjects/DatabaseInstance.php";
+include_once "DataObjects/DatabaseInstance.php";
 $keywordArray = explode(" ",$_GET['keyword']);
 $categoryId = $_GET['category'];
 $keywordString = "";
@@ -31,8 +31,7 @@ else {
     <body>
     <div>
         <?php include "navbar.php";?>
-        <br><br>
-        <div class="container-fluid">
+        <div class="container">
             <?php
                 foreach ($products as $product){
                     echo '<h3><a href="#">' . $product["product_name"] . '</a></h3>';

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+    <html>
     <body>
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
@@ -16,7 +16,7 @@
                         <div class="input-group-btn">
                             <select name="category" class="form-control">
                                 <option value="0">All Categories</option>
-                                <?php include "DataObjects/Categories.php" ?>
+                                <?php include_once "DataObjects/Categories.php" ?>
                             </select>
                             <button value="search" class="btn btn-info btn-md" type="submit">
                                 <i class="glyphicon glyphicon-search"> Search</i>

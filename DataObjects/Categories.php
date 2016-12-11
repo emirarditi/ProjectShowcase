@@ -1,5 +1,5 @@
 <?php
- include "DataObjects/DatabaseInstance.php";
+ include_once "DataObjects/DatabaseInstance.php";
 
  $options = $database->select("Categories",[
      "category_id",
