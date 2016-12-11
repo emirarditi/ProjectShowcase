@@ -7,10 +7,10 @@
 <body>
 <div>
     <?php include "navbar.php"; ?>
-
     <div class="container-fluid">
         <h1><strong>WELCOME</strong></h1>
         <h4>Trending products:</h4>
+        <br>
 
         <?php include "DataObjects/RandomProducts.php"?>
     </div>
