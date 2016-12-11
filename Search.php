@@ -29,7 +29,10 @@ else {
         <?php include "Head.php";?>
     </head>
     <body>
-        <div class="container">
+    <div>
+        <?php include "navbar.php";?>
+        <br><br>
+        <div class="container-fluid">
             <?php
                 foreach ($products as $product){
                     echo '<h3><a href="#">' . $product["product_name"] . '</a></h3>';
@@ -38,5 +41,6 @@ else {
                 }
             ?>
         </div>
+    </div>
     </body>
 </html>
