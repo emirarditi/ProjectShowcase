@@ -1,32 +1,33 @@
-<!DOCTYPE html>
 <html>
 <head>
     <?php include "Head.php";?>
+    <title>ShowcaseSite Login</title>
 </head>
-    <body>
-    <?php include "navbar.php";?>
-    <div class="container-fluid">
-        <form method="POST" action="CheckLogin.php">
-            <div class="row">
-                <div class="col-md-4 col-md-offset-4">
+<body>
+<div>
+    <?php include "navbar.php"; ?>
+<div class="container-fluid">
+    <div class="row" style="margin-left:10px">
+        <br>
+        <div class="col-sm-5">
+            <h1>Login</h1>
+            <br>
+            <form method="POST" action="CheckLogin.php">
+                <div class="form-group">
                     <label for="username">Username:</label>
-                    <input type="text" name="username" id="username" placeholder="Username"/>
+                    <input class="form-control" type="text" name="username" id="username" placeholder="Enter username"/>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-md-offset-4">
+                <div class=" form-group">
                     <label for="password">Password:</label>
-                    <input type="password" name="password" id="password" placeholder="Password"/>
+                    <input class="form-control" type="password" name="password" id="password" placeholder="Enter password"/>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-md-offset-5">
-                    <button type="submit" class="btn btn-info">
-                        <i class="glyphicon glyphicon-log-in"> Login</i>
-                    </button>
+                <div class="form-group">
+                    <button class="btn btn-info" type="submit">Login</button>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
-    </body>
+</div>
+</div>
+</body>
 </html>
