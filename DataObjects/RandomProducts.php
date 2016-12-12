@@ -1,9 +1,9 @@
 <?php
 
-$counted = $database->count("Products");
+$counted = $database->count("products");
 
 $randProd = mt_rand(0, $counted-1);
-$prod = $database->select("Products", "*");
+$prod = $database->select("products", "*");
 $postamount = 10;
 
 for ($i = $randProd; $i < $randProd + $postamount; $i = $i + 1){
