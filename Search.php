@@ -34,7 +34,7 @@ else {
         <div class="container">
             <?php
                 foreach ($products as $product){
-                    echo '<h3><a href="Product.php?name=' . $product["product_name"] . '">' . $product["product_name"] . '</a></h3>';
+                    echo '<h3><a href="Product.php?productId=' . $product["product_id"] . '">' . $product["product_name"] . '</a></h3>';
                     echo '<p>' . $product["product_description"] . '</p>';
                     echo '<br><br>';
                 }

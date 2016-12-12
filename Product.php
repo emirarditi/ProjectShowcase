@@ -1,9 +1,9 @@
 <?php
     include_once "DataObjects/DatabaseInstance.php";
-    $productName = $_GET['name'];
+    $productId = $_GET['productId'];
 
     $product = $database->select("products", "*", [
-        "product_name" => $productName
+        "product_id" => $productId
     ]);
 
 ?>
@@ -23,7 +23,7 @@
 
     <div class="col-md-9">
         <?php
-            echo '<h2>' . $productName . '</h2>';
+            echo '<h2>' . $product[0]["product_name"] . '</h2>';
         ?>
     </div>
 </body>

@@ -12,7 +12,7 @@ for ($i = $randProd; $i < $randProd + $postamount; $i = $i + 1){
         $posted = $postamount - ($counted - $randProd);
         $randProd = $posted - $postamount;
     }
-    echo '<a href="../Projectshowcase/Product.php?name=' . $prod[$i]["product_name"] . '">' . $prod[$i]["product_name"] . '</a>';
+    echo '<a href="Product.php?productId=' . $prod[$i]["product_id"] . '">' . $prod[$i]["product_name"] . '</a>';
     echo '<p>' . $prod[$i]["product_description"] . '</p>';
     echo '<br><br>';
 }
