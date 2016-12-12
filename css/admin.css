@@ -1,0 +1,29 @@
+.navbar-collapse.left {
+    height: auto;
+    border-top: 0;
+    box-shadow: none;
+    max-height: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.nav.navbar-nav.left li a {
+    color: #2989b4;
+    border-bottom: 1px solid #2989b4;
+}
+
+.nav.navbar-nav.left li a:hover {
+    background-color: #2989b4;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.nav.navbar-nav.left li a:active {
+    background-color: #2989b4;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+ul.navbar-nav.left li {
+    width: 100%;
+}
