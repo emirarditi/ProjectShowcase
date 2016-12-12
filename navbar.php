@@ -8,7 +8,9 @@
                 </div>
                 <ul class="nav navbar-nav">
                     <li><a href="index.php" style="color:white">Home</a></li>
+                    <li><a href="LoginPage.php" style="color:white">Login</a></li>
                     <li><a href="AdminPage.php" style="color:white">Admin</a></li>
+                    <
                 </ul>
                 <form method="get" class="navbar-form navbar-left" action="Search.php">
                     <div class="input-group">
