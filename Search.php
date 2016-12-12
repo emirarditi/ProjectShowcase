@@ -10,12 +10,12 @@ for($i = 0; $i < count($keywordArray); $i++){
 }
 $products = [];
 if($categoryId == 0) {
-    $products = $database->select("Products", "*", [
+    $products = $database->select("products", "*", [
             "product_description[REGEXP]" => $keywordString
     ]);
 }
 else {
-    $products = $database->select("Products", "*", [
+    $products = $database->select("products", "*", [
         "AND" =>[
         "product_description[REGEXP]" => $keywordString,
         "product_category_id" => $categoryId
