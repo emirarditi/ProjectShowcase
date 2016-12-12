@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 12, 2016 at 08:58 AM
+-- Generation Time: Dec 12, 2016 at 11:15 AM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -89,16 +89,26 @@ CREATE TABLE `products` (
 INSERT INTO `products` (`product_id`, `product_name`, `product_description`, `product_category_id`, `reg_date`) VALUES
 (1, 'Neil Round Couch', 'Neil Round Couch : Red Round 2meter 30kgs diameter couch', 1, '2016-09-07'),
 (2, 'T-fal Cooking Pot', 'T-fal Cooking Pot : Black 5 lt 28 cm diameter cooking pot', 2, '2016-12-11'),
-(3, 'Zee SaucePan', 'Zee SaucePan : Black 1lt 14cm diameter nonstick saucepan ', 2, '2016-12-11'),
-(4, 'Flashy16', 'Flashy16 : Green 16 GB usb 2.0 flash drive', 3, '2016-12-11'),
-(5, 'SeaWeed HardDisk', 'SeaWeed HardDisk : Blue 1TB 15x9cm external hard disk', 3, '2016-12-11'),
-(6, 'Liverpool Protein Shaker Cup', 'Liverpool Protein Shaker Cup : Red 0.5lt Protein Shaker (TheOnlyCupLiverpoolWillHaveThisSeason)', 4, '2016-12-11'),
-(7, 'Miami Heat Iphone 6s Case', 'Miami Heat Iphone 6s Case : Transparent 15.8x7.78cm iphone 6s Case', 4, '2016-12-11'),
-(8, 'UCLA hoodie', 'UCLA hoodie : Medium-Large-XLarge Navy blue hoodie ', 5, '2016-12-11'),
-(9, 'WaterP Boots', 'WaterP Boots : Brown 42-43-44-45-46 EU waterproof boots', 6, '2016-12-11'),
-(10, 'Fire Js', 'Fire Js : Black and orange 9.5-10-10.5-11 US Js Jordan basketball shoes ', 6, '2016-12-11'),
-(11, 'T-fal Frying Pan', 'T-fal Frying Pan : Black 30cm diameter non-stick Frying pan', 2, '2016-12-11'),
-(12, 'Light as a feather Kitchen Table', 'Light as a feather Kitchen Table : White Square 2kg 2x2m 1.5m height table', 1, '2016-12-11');
+(3, 'Zee SaucePan', 'Zee SaucePan : Black 1lt 14cm diameter nonstick saucepan ', 2, '2016-08-10'),
+(4, 'Flashy16', 'Flashy16 : Green 16 GB usb 2.0 flash drive', 3, '2017-02-09'),
+(5, 'SeaWeed HardDisk', 'SeaWeed HardDisk : Blue 1TB 15x9cm external hard disk', 3, '2016-08-30'),
+(6, 'Liverpool Protein Shaker Cup', 'Liverpool Protein Shaker Cup : Red 0.5lt Protein Shaker (TheOnlyCupLiverpoolWillHaveThisSeason)', 4, '2016-03-03'),
+(7, 'Miami Heat Iphone 6s Case', 'Miami Heat Iphone 6s Case : Transparent 15.8x7.78cm iphone 6s Case', 4, '2016-02-03'),
+(8, 'UCLA hoodie', 'UCLA hoodie : Medium-Large-XLarge Navy blue hoodie ', 5, '2015-11-17'),
+(9, 'WaterP Boots', 'WaterP Boots : Brown 42-43-44-45-46 EU waterproof boots', 6, '2016-02-06'),
+(10, 'Fire Js', 'Fire Js : Black and orange 9.5-10-10.5-11 US Js Jordan basketball shoes ', 6, '2016-04-18'),
+(11, 'T-fal Frying Pan', 'T-fal Frying Pan : Black 30cm diameter non-stick Frying pan', 2, '2015-03-13'),
+(12, 'Light as a feather Kitchen Table', 'Light as a feather Kitchen Table : White Square 2kg 2x2m 1.5m height table', 1, '2015-02-03'),
+(13, 'DWade Converse Hoodie', 'DWade Converse Hoodie : Grey and red Small-Medium hoodie', 5, '2016-11-16'),
+(14, 'Classic GAP hoodie', 'Classic GAP hoodie : Black-Grey-Green SMLXL hoodie ', 5, '2016-09-06'),
+(15, 'Vslim t-shirt', 'Vslim t-shirt : Black V-cut slim body SMLXL tshirt', 5, '2016-09-11'),
+(16, 'Striped Polo', 'Striped Polo : Dark blue and red Striped M-L-XXL Polo tshirt', 5, '2017-02-03'),
+(17, 'slimy iphone 7 case', 'slimy iphone 7 case : Blk-Wht-Red-Blu-Pnk slim fit rubber iphone 7 case', 4, '2015-01-01'),
+(18, 'Heavy duty HTC M9 case', 'Heavy duty HTC M9 case : Blk Grey-Wht Grey Dual layer M9 case', 4, '2017-04-06'),
+(19, 'Light as a feather sneakers', 'Light as a feather sneakers : Blue and yellow 41-47 EU lightweight sport shoes', 6, '2016-12-29'),
+(20, 'Comfy Clarks', 'Comfy Clarks : Black-Brown 43-49 Classic Clarks shoes', 6, '2016-08-25'),
+(21, 'DigiTech WL-Optical Mouse', 'DigiTech WL-Optical Mouse : White-Black wireless optical mouse', 3, '2016-12-20'),
+(22, 'GNation Keyboard Mouse set', 'GNation Keyboard Mouse set : Black and Green Gaming Optical Wired mouse Backlit QWERTY keyboard', 3, '2016-03-20');
 
 -- --------------------------------------------------------
 
@@ -155,7 +165,35 @@ INSERT INTO `product_details` (`product_detail_id`, `product_id`, `detail_type_i
 (35, 11, 7, 'Nonstick'),
 (36, 12, 5, '2x2m'),
 (37, 12, 4, '1m'),
-(38, 12, 6, 'Square');
+(38, 12, 6, 'Square'),
+(39, 13, 2, 'Grey and red'),
+(40, 13, 3, 'Small-Medium'),
+(41, 14, 2, 'Black-Grey-Green'),
+(42, 14, 3, 'SMLXL'),
+(43, 15, 2, 'Black'),
+(44, 15, 3, 'SMLXL'),
+(45, 15, 6, 'Slim body'),
+(46, 15, 7, 'V cut'),
+(47, 16, 2, 'Dark blue and red'),
+(48, 16, 3, 'M-L-XXL'),
+(49, 16, 6, 'Striped'),
+(50, 17, 2, 'Blk-Wht-Red-Blu-Pnk'),
+(51, 17, 7, 'slim fit rubber'),
+(52, 18, 2, 'Blk Grey-Wht Grey'),
+(53, 18, 7, 'Dual layer'),
+(54, 19, 2, 'Blue and yellow'),
+(55, 19, 3, '41-47 EU'),
+(56, 19, 7, 'Lightweight'),
+(57, 20, 2, 'Black-Brown'),
+(58, 20, 3, '43-49'),
+(59, 20, 7, 'Classic'),
+(60, 21, 2, 'White-Black'),
+(61, 21, 7, 'wireless'),
+(62, 21, 7, 'Optical'),
+(63, 22, 2, 'Black and Green'),
+(64, 22, 7, 'Gaming'),
+(65, 22, 7, 'Optical Wired'),
+(66, 22, 7, 'Backlit QWERTY');
 
 -- --------------------------------------------------------
 
@@ -247,12 +285,12 @@ ALTER TABLE `detailtypes`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 --
 -- AUTO_INCREMENT for table `product_details`
 --
 ALTER TABLE `product_details`
-  MODIFY `product_detail_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
+  MODIFY `product_detail_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
 --
 -- AUTO_INCREMENT for table `product_pictures`
 --
