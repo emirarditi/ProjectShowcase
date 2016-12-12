@@ -1,9 +1,7 @@
 <?php
 include_once "DataObjects/DatabaseInstance.php";
 $user = $_POST["username"];
-var_dump($user);
 $password = md5($_POST["password"]);
-var_dump($password);
 $login_check = $database->count("users",[
     "AND" => [
     "user_name" => $user,
