@@ -9,9 +9,11 @@ $login_check = $database->count("users",[
     ]
 ]);
 if($login_check === 1){
+    session_start();
+    $_SESSION["id"] = 1;
     ?>
     <script>function trueLogin() {
-            window.location.href = "AdminPage.php";
+            window.location.href = "index.php";
         }
         trueLogin();
         </script>

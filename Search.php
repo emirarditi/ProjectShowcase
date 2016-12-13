@@ -37,6 +37,7 @@ else {
                     echo '<h3><a href="Product.php?productId=' . $product["product_id"] . '">' . $product["product_name"] . '</a></h3>';
                     echo '<p>' . $product["product_description"] . '</p>';
                     echo '<br><br>';
+
                 }
             ?>
         </div>

@@ -1,3 +1,7 @@
+<?php
+if (session_status() == PHP_SESSION_NONE)
+    session_start();
+?>
 <!DOCTYPE html>
     <html>
     <body>
@@ -8,8 +12,12 @@
                 </div>
                 <ul class="nav navbar-nav">
                     <li><a href="index.php" style="color:white">Home</a></li>
-                    <li><a href="LoginPage.php" style="color:white">Login</a></li>
-                    <li><a href="AdminPage.php" style="color:white">Admin</a></li>
+                    <?php if(isset($_SESSION["id"])){ ?>
+                        <li><a href="AdminPage.php" style="color:white">Admin</a></li>
+                        <li><a href="Logout.php" style="color:white">Logout</a></li>
+                    <?php } else {?>
+                        <li><a href="LoginPage.php" style="color:white">Login</a></li>
+                    <?php } ?>
                 </ul>
                 <form method="get" class="navbar-form navbar-left" action="Search.php">
                     <div class="input-group">
