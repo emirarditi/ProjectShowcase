@@ -16,8 +16,10 @@
 
     $similar_counted = count($similar_products);
     
-    $product_details = $database->select("product_details", "*", [
-        "product_id" => $productId
+    $product_details = $database->select("product_details",[
+            "[>]detailtypes" => ["detail_type_id" => "detail_id"]
+    ], "*", [
+        "product_details.product_id" => $productId
     ]);
 ?>
 <!DOCTYPE html>
@@ -56,7 +58,7 @@
             echo '<h2>' . $product[0]["product_name"] . '</h2>';
             echo '<h4>' . $product[0]["product_description"] . '</h4>';
             foreach ($product_details as $detail){
-                echo '<li><p>' . $detail["detail_value"] . '</p></li>';
+                echo '<li><p>'.'<b>' .$detail["detail_name"].':  </b>' . $detail["detail_value"] . '</p></li>';
             }
         ?>
     </div>
