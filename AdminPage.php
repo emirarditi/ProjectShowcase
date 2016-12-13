@@ -17,8 +17,6 @@
                         <div class="dropdown">
                             <ul class="nav navbar-nav left">
                                 <li><a href="AdminAdd.php">Add Product</a></li>
-                                <li><a href="#">Insert Product</a></li>
-                                <li><a href="#">Delete Product</a></li>
                             </ul>
                         </div>
                     </div>
