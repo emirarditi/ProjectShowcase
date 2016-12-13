@@ -25,7 +25,7 @@
         <div class="row" id="rowDiv">
             <div class="col-sm-10" style="margin-top: 80px" id="colDiv">
                 <div class="container" id="contDiv">
-                    <form method="get" action="AddProduct.php" id="mainForm">
+                    <form method="post" action="AddProduct.php" id="mainForm">
                         <div id="formDiv">
                         <input type="text" name="typeIndex" style="visibility: hidden" value="<?php if (isset($_GET["productId"]))echo $_GET["productId"]; else echo 0;?>">
                         <div class="form-group">
@@ -51,17 +51,17 @@
                             <br>
                         </div>
                         <div class="form-group" id="detailsDiv">
-                            <p>Details:</p>
+                            <p>Details(To delete a detail, just leave it completely blank(NO SPACES!!):</p>
                             <?php if(isset($_GET["productId"])){
                                 $details = $database->select("product_details", "*",[
                                   "product_id" => $_GET["productId"]
                                 ]);
                                 foreach ($details as $detail){
                                     $_GET["selected"] = $detail["detail_type_id"];
-                                    echo "<select name='detail_type_id' style='display:inline;' class='form-control'>";
+                                    echo "<select name='detail_type_id[]' style='display:inline;' class='form-control'>";
                                     include "DataObjects/Details.php";
                                     echo "</select>";
-                                    echo "<input type='text' name='detail_value' value='" . $detail["detail_value"] . "' class='form-control' style='display: inline'>";
+                                    echo "<input type='text' name='detail_value[]' value='" . $detail["detail_value"] . "' class='form-control' style='display: inline'>";
                                     echo "<br>";
                                 }
                             }?>
