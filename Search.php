@@ -38,7 +38,7 @@ else {
             <?php
                 foreach ($products as $product){
                     $extra = "";
-                    if(isset($_SESSION[id]))
+                    if(isset($_SESSION["id"]))
                         $extra = '   <a style="color: red;" href="DeleteProduct.php?productId=' . $product["product_id"] . '"><i class="glyphicon glyphicon-remove-circle"></i></a>   <a style="color: yellow;" href="AdminAdd.php?productId=' . $product["product_id"] . '"><i class="glyphicon glyphicon-pencil"></i></a>';
                     echo '<h3><a href="Product.php?productId=' . $product["product_id"] . '">' . $product["product_name"] . '</a>' . $extra . '</h3>';
                     echo '<p>' . $product["product_description"] .'</p>';
