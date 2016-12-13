@@ -1,4 +1,7 @@
 <?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 include_once "DataObjects/DatabaseInstance.php";
 $keywordArray = explode(" ",$_GET['keyword']);
 $categoryId = $_GET['category'];
@@ -34,10 +37,12 @@ else {
         <div class="container">
             <?php
                 foreach ($products as $product){
-                    echo '<h3><a href="Product.php?productId=' . $product["product_id"] . '">' . $product["product_name"] . '</a></h3>';
-                    echo '<p>' . $product["product_description"] . '</p>';
+                    $extra = "";
+                    if(isset($_SESSION[id]))
+                        $extra = '   <a style="color: red;" href="DeleteProduct.php?productId=' . $product["product_id"] . '"><i class="glyphicon glyphicon-remove-circle"></i></a>';
+                    echo '<h3><a href="Product.php?productId=' . $product["product_id"] . '">' . $product["product_name"] . '</a>' . $extra . '</h3>';
+                    echo '<p>' . $product["product_description"] .'</p>';
                     echo '<br><br>';
-
                 }
             ?>
         </div>
