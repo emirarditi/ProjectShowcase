@@ -49,7 +49,7 @@
                             <textarea class="form-control" rows="4" name="product_description" id="product_description"><?php if (isset($_GET["productId"]))echo $productData[0]["product_description"]; ?></textarea>
                             <br>
                         </div>
-                        <button class="btn btn-info btn-lg">Add</button>
+                        <button type="submit" class="btn btn-info btn-lg">Add</button>
                     </form>
                 </div>
         </div>
