@@ -9,9 +9,14 @@
     <?php include "navbar.php";?>
     <div class="container-fluid">
         <div class="row">
+            <div class="container">
+                <div class="jumbotron" style="background-color: #2989b4;">
+                    <h1 style="text-align: center; color: white;">Welcome to Admin Page</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-sm-2">
-                <h1>Admin Page</h1>
-                <br>
                 <nav class="navbar navbar-default navbar-fixed-side">
                     <div class="navbar-collapse collapse left">
                         <div class="dropdown">
@@ -21,13 +26,6 @@
                         </div>
                     </div>
                 </nav>
-            </div>
-            <div class="col-sm-10" style="margin-top: 60px">
-                <div class="container">
-                    <div class="jumbotron" style="background-color: #2989b4;">
-                        <h1 style="text-align: center; color: white;">Welcome to Admin Page</h1>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
